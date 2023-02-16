@@ -9,8 +9,8 @@ int main() {
     auto var1 = {20, 30};
     auto var2 {make_unique<int>()};
 
-    cout<<"Type of var1 = " << type_id_with_cvr<decltype(var1)>().pretty_name()<<endl;
-    cout<<"Type of var2 = " << type_id_with_cvr<decltype(var2)>().pretty_name()<<endl;
+    cout<<"Type of var1 = " << type_id_with_cvr<decltype(var1)>().pretty_name() << endl;
+    cout<<"Type of var2 = " << type_id_with_cvr<decltype(var2)>().pretty_name() << endl;
     
     return 0;
 }
