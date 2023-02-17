@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-// output
+// ######### Output #############
 // Less than ten.
 // Between eleven and twenty.
 // Ten.
