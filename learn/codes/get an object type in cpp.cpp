@@ -14,3 +14,8 @@ int main() {
     
     return 0;
 }
+
+
+// ########## Output ############
+// Type of var1 = std::initializer_list<int>
+// Type of var2 = std::unique_ptr<int, std::default_delete<int> >
