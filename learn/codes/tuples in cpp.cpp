@@ -24,6 +24,8 @@ int main() {
     return 0;
 }
 
+
+// ######### Output #############
 // id: 1, roll: 2, name: Forhad
 // roll: 2
 // id: 2, roll: 10, name: Rasel
