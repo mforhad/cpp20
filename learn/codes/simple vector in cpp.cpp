@@ -12,12 +12,13 @@ public:
     // default constructor
     vector(){}
 
-    // vector with size parameter
+    // constructor with sized parameter
     vector(size_t size) {
         _capasity = size;
         _data = new T[_capasity];
     }
 
+    // push an item to the vector
     void push_back(T val) {
         cout<<"capasity: " << _capasity << endl;
         if (_size == _capasity - 1) {
@@ -27,6 +28,7 @@ public:
         _data[_size++] = val;
     }
 
+    // pop the latest item from the vector
     T pop_back() {
         T val = _data[--_size];
         if (_size <= _capasity / 2) {
@@ -35,10 +37,14 @@ public:
         return val;
     }
 
+    // get vector size
     size_t size() {return _size;}
+
+    // get capasity of the vector for test purpose
     size_t capasity(){return _capasity;}
 };
 
+// Main function for testing the vector
 int main() {
     vector<int> v;
     vector<double> v1(5);
