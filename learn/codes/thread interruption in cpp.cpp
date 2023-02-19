@@ -24,3 +24,10 @@ int main() {
 
     return 0;
 }
+
+// ####### Output #########33
+// Thread1 Counter: 1
+// Thread1 Counter: 2
+// Thread1 Counter: 3
+// Thread1 Counter: 4
+// Thread2 request the thread1 to stop.
