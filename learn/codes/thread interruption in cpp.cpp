@@ -2,7 +2,7 @@
 #include <thread>
 
 /*
-* This program creates two thread. after 5 seconds, the second thread request
+* This program creates two thread. 5 seconds after the first thread triggers, the second thread request
 * the first thread to stop.
 */
 int main() {
