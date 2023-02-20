@@ -50,7 +50,7 @@ int main() {
     int x; // definition of x
     x = 20; // initialization of x
 
-    std::cout<<x<<std::endl;
+    std::cout << x << std::endl;
     return 0;
 }
 ```
