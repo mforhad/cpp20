@@ -68,4 +68,22 @@ This will yield a compiler error if an implicit conversion potentially results a
 - constexpr: evaluated at compile-time 
 
 
+## Problem 3
+### a) Answer:
+- prvalue: prvalue is a pure rvalue and it should have a persistent memory address. for example '`42`', '`true`' or '`3 + 5`' are prvalues
+- xvalue: an xvalue or 'expiring value' is a vlaue that is about to be moved from and therefore, it's resource can be reused. for example
+```
+int x = 5;
+int y = std::move(x); // x is an xvalue here
+```
+- glvalue stands for generalized lvalue. It is an expression that refers to an object or a function. for example,
+```
+int x = 42; // x is a glvalue here
+int y = x + 3; // x+3 is a prvalue here
+```
+### b) Answer:
+```
+edagdf
+```
+
 
