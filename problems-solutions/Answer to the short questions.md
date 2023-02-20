@@ -54,3 +54,15 @@ int main() {
     return 0;
 }
 ```
+### c) Answer:
+`int x{getValueOfX()};`
+
+This will yield a compiler error if an implicit conversion potentially results a data loss. Thus, safe initialization saves potential data loss showing an error.
+
+### d) Answer:
+- struct: default member variables and functions are public.
+- class: default member variables and functions are private.
+
+### e) Answer:
+- const: evaluated at runtime
+- constexpr: evaluated at compile-time 
