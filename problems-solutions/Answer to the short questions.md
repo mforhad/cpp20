@@ -43,8 +43,6 @@ x = 20; // initialization of x
 The complete program is as follows
 ```
 #include <iostream>
-#include <concepts>
-
 
 extern int x; // declaration of x
 
