@@ -12,14 +12,14 @@ int& foo(unsigned conditionalParam) {
 }
 
 int main() {
-    std::cout << "Before Function call" << std::endl;
+    std::cout << "Before the function call" << std::endl;
     std::cout << "Global var 1 = " << globalVar1 << std::endl;
     std::cout << "Global var 2 = " << globalVar2 << std::endl;
     
     foo(1) = 100; // modifies the value of globalVar1
     foo(2) = 200; // modifies the value of globalVar2
 
-    std::cout << "After Function call" << std::endl;
+    std::cout << "After the function call" << std::endl;
     std::cout << "Global var 1 = " << globalVar1 << std::endl;
     std::cout << "Global var 2 = " << globalVar2 << std::endl;
 
@@ -28,9 +28,9 @@ int main() {
 
 
 // ######### Output ##########
-// Before Function call
+// Before the function call
 // Global var 1 = 0
 // Global var 2 = 0
-// After Function call
+// After the function call
 // Global var 1 = 100
 // Global var 2 = 200
