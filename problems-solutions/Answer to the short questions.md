@@ -6,22 +6,51 @@
 </center>
 
 ## Problem 1
-### a) Answer: 1
+### a) What does static typing in C++ mean?
+1. Expression type compatibility checks are done at compile-time
+2. Expression types are not known at compile-time
+3. Expression always have the same type
+4. Expression types cannot be converted
+#### Answer: 1
 Static typing in C++ means that the types of expressions are checked at compile-time. This means that the compiler checks the type compatibility of expressions during compilation, which helps catch type-related errors early.
 
-### b) Answer: 3
+### b) What is the C++ preprocessor?
+1. validation of C++ source code for correctness
+2. a superset dafiniiiion of C++ to allow more language features
+3. source code adjustment through text replacement
+4. optimization seep to improve code performance
+#### Answer: 3
 The C++ preprocessor is a tool that performs text replacement in C++ source code before it is compiled. It is used to modify the source code, include header files, define constants, and perform other operations that are not part of the C++ language.
 
-### c) Answer: 1
+### c) What does a build system like CMake do?
+1. simplifies compilation of project sources and its dependencies
+2. automatically creates continuous integration tests for your code
+3. it creates reproducible, platform-independent builds for you
+4. it checks the code far correctness and does static. analysis 
+#### Answer: 1
 A build system like CMake simplifies the compilation of project sources and its dependencies by automating the build process. It generates platform-specific build scripts, which can be used to build the project. CMake can also be used to create reproducible, platform-independent builds.
 
-### d) Answer: 2
+### d) What does a typical C++ compiler do?
+1. combine C++ source code files to platform-independent programs
+2. translate and optimize valid C++ source code to platform-specific machine code
+3. it analyzes C++ sources for static code analysis and bug detection
+4. it creates an executable file that references all its dependencies
+#### Answer: 2
 A typical C++ compiler translates and optimizes valid C++ source code to platform-specific machine code. It also checks the syntax of the source code and performs static analysis to detect bugs and other issues.
 
-### e) Answer: 3
+### e) What does a typical C++ linker do?
+1. it discovers program dependencies on the system
+2. when running a programm, it maps its memory regions and dependency libraries
+3. it resolves symbol addresses from binary translation units
+4. it bundles together multiple programs to a self-contained installation program
+#### Answer: 3
 The linker is responsible for combining the compiled object files into a single executable or shared library. As it does so, it resolves any references to external symbols, which are functions or variables that are defined in one translation unit and used in another. The linker ensures that the symbol addresses are properly linked so that the program can execute correctly.
 
-### f) Answer: 1
+### f) Your code is violating the one definition rule (ODR). Which tools will tell you about it?
+1. Some ODR violation will not be caught by either compiler or linker
+2. the compiler and linker together will catch all ODR violations
+3. the compiler alone will catch all ODR violations
+#### Answer: 1
 Some ODR violations may not be caught by either the compiler or linker. However, both the compiler and linker can catch some ODR violations. Therefore, neither the compiler alone nor the linker alone can catch all ODR violations.
 
 
@@ -293,25 +322,53 @@ int main() {
 ```
 
 ## Problem 10
-### a) Answer: 3
+### a) What is a 'friend' in C++?
+1. It specifies that a class is directly related to another class
+2. it is a public non member method accessing a class
+3. it is granted access to otherwise inaccessible members of a class
+#### Answer: 3
 A friend in C++ is a non-member function or class that is granted access to the private and protected members of a class.
 
-### b) Answer: 2
+### b) Why do we need polymorphic cloning?
+1. to pass a variadic argument list without runtime overhead
+2. to duplicate an inheritance hierarchy into a new class 
+3. to allow deep copying of an object in a inheritance hierarchy
+#### Answer: 2
 Polymorphic cloning is used to create a new object of a derived class, but with the same properties and behaviors as the original object, including its complete inheritance hierarchy.
 
-### c) Answer: 1
+### c) What is the guaranteed time complexity (in terms of input size n) of the typical operation of a std::map?
+1. O(log n)
+2. O(n)
+3. O(1)
+#### Answer: 1
 The typical operation of a std::map, including insertion, deletion, and searching, has a guaranteed time complexity of O(log n).
 
-### d) Answer: 1
+### d) How would you declare a function func, in which you want to read-access a large object of type T?
+1. void func(const T& obj);
+2. void func(const T obj);
+3. void func(const T&& obj);
+#### Answer: 1
 If you want to read-access a large object of type T, you should use a const reference to avoid copying the object.
 
-### e) Answer: 3
+### e) Which modifier guarantees compile-time execution of a function?
+1. constexpr
+2. const
+3. consteval
+#### Answer: 3
 consteval is a new keyword in C++20 that guarantees a function to be executed at compile-time. A consteval function is required to be evaluated at compile-time by the compiler and it is an error if it is not possible to evaluate the function at compile-time. This can help improve performance by allowing for more computations to be done at compile-time rather than run-time.
 
-### f) Answer: 2
+### f) What is the purpose of expression templates?
+1. specifying an arbitrary amount of template parameters
+2. lazy evaluation of arithmetic expressions at compile-time. 
+3. Restricting template parameters.
+#### Answer: 2
 Expression templates are a technique in C++ to enable lazy evaluation of arithmetic expressions at compile-time, which can lead to significant performance improvements.
 
-### g) Answer: 1
+### g) What can the Curiously recurrint template patter (CRTP) be used for?
+1. provide static polymorphism
+2. provide recursive polymorphism
+3. provide dynamic polymorphism
+#### Answer: 1
 The Curiously Recurring Template Pattern (CRTP) is a technique in C++ to provide static polymorphism, which is a form of compile-time polymorphism that can provide some of the benefits of dynamic polymorphism without the overhead of virtual functions.
 
 
